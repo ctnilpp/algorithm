@@ -1,0 +1,20 @@
+package p5705;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		double now = cin.nextDouble();
+		double little = now-(int)now;
+		double baiwei = now/1000;
+		double shiwei = now/100;
+		double gewei = now/10;
+		DecimalFormat df = new DecimalFormat("0.0");
+		System.out.println(df.format(little));
+	}
+
+}

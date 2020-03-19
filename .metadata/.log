@@ -87,3 +87,34 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-03-19 12:49:34.949
 !MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2020-03-19 13:43:37.199
+!MESSAGE Full project indexing required:
+  [+] D:\java2\lib\charsets.jar
+  [+] D:\java2\lib\ext\access-bridge-64.jar
+  [+] D:\java2\lib\ext\cldrdata.jar
+  [+] D:\java2\lib\ext\dnsns.jar
+  [+] D:\java2\lib\ext\jaccess.jar
+  [+] D:\java2\lib\ext\jfxrt.jar
+  [+] D:\java2\lib\ext\localedata.jar
+  [+] D:\java2\lib\ext\nashorn.jar
+  [+] D:\java2\lib\ext\sunec.jar
+  [+] D:\java2\lib\ext\sunjce_provider.jar
+  [+] D:\java2\lib\ext\sunmscapi.jar
+  [+] D:\java2\lib\ext\sunpkcs11.jar
+  [+] D:\java2\lib\ext\zipfs.jar
+  [+] D:\java2\lib\jce.jar
+  [+] D:\java2\lib\jfr.jar
+  [+] D:\java2\lib\jsse.jar
+  [+] D:\java2\lib\resources.jar
+  [+] D:\java2\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
