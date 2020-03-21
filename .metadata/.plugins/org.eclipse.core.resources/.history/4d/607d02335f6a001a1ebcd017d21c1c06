@@ -42,14 +42,13 @@ public class Main {
 	    	double PI = 3.141593;
 	    	int r =5;
 	    	DecimalFormat df = new DecimalFormat("0.0000");
-	    	DecimalFormat df1 = new DecimalFormat("0.000");
-	    	System.out.println(df.format(2*PI*r));
-	    	System.out.println(df.format(PI*r*r));
-	    	System.out.println(df1.format((4.0*PI*r*r*r)/3.0));
+	    	System.out.println(2*PI*r);
+	    	System.out.println(PI*r*r);
+	    	System.out.println((4.0*PI*r*r*r)/3.0);
 	    } else if (T == 9) {
 	        // 请自行完成问题 9 的代码
-	    	System.out.println(22);
-	    } else if (T == 10) {//不太会 牛吃草太有趣了,hhhh
+	    	System.out.println(18);
+	    } else if (T == 10) {//不太会
 	        // 请自行完成问题 10 的代码
 	    } else if (T == 11) {	
 	        // 请自行完成问题 11 的代码

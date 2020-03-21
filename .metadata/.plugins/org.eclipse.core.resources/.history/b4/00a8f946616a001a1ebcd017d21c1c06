@@ -49,7 +49,7 @@ public class Main {
 	    } else if (T == 9) {
 	        // 请自行完成问题 9 的代码
 	    	System.out.println(22);
-	    } else if (T == 10) {//不太会 牛吃草太有趣了,hhhh
+	    } else if (T == 10) {//不太会
 	        // 请自行完成问题 10 的代码
 	    } else if (T == 11) {	
 	        // 请自行完成问题 11 的代码
