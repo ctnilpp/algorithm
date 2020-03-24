@@ -51,21 +51,25 @@ public class Main {
 	    	System.out.println(22);
 	    } else if (T == 10) {//不太会 牛吃草太有趣了,hhhh
 	        // 请自行完成问题 10 的代码
+	    	System.out.println(9);
 	    } else if (T == 11) {	
 	        // 请自行完成问题 11 的代码
-	    	System.out.println(100/3);
+	    	DecimalFormat df = new DecimalFormat("0.0000");
+	    	System.out.println(df.format(1.0*100/3));
 	    } else if (T == 12) {
 	        // 请自行完成问题 12 的代码
 	    	for(int i=(int)'A';i<='Z';i++){
 	    		if(i==(int)'M'){
 	    			System.out.println(i+1-(int)'A');
-	    			break;
+	    		}
+	    		if(i==((int)'A')+17){
+	    			System.out.println((char)i);
 	    		}
 	    	}
 	    } else if (T == 13) {
 	        // 请自行完成问题 13 的代码
 	    	double PI = 3.141593;
-	    	System.out.println((int)Math.pow(4*PI*Math.pow(14, 3)/3, 1.0/3.0));
+	    	System.out.println((int)Math.pow(4*PI*(4*4*4+10*10*10)/3, 1.0*1/3));
 	    } else if (T == 14) {
 	        // 请自行完成问题 14 的代码
 	    	int price = 110;
@@ -80,7 +84,7 @@ public class Main {
 	    		price--;
 	    		num++;
 	    	}
-	    	System.out.println(result);
+	    	System.out.println((int)result);
 	    }
 	}
 

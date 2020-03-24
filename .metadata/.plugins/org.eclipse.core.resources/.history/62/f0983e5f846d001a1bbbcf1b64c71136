@@ -1,0 +1,32 @@
+package p5716;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int big[] = {1,3,5,7,8,10,12};
+		int small[] = {2,4,6,9,11};
+		Scanner cin = new Scanner(System.in);
+		int year = cin.nextInt();
+		int month = cin.nextInt();
+		if((year%100!=0&&year%4==0)||((year%100==0)&&year%400==0)){
+			//ÈòÄê
+			for(int i =0;i<big.length;i++){
+				if(month==big[i]){
+					System.out.println(31);
+				}
+			}
+			for(int i =0;i<small.length;i++){
+				if(month==small[i]&&month==2){
+					System.out.println(29);
+				}
+				else {
+					System.out.println(30);
+				}
+			}
+		}
+	}
+
+}

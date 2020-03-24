@@ -1,0 +1,15 @@
+package p5714;
+
+public class Main {
+    
+    public static void main(String args[]){
+        double a=1.23456;
+        System.out.printf("%1.1\r\n", a);
+     
+        a=12.3456;
+        System.out.printf("%1.1\r\n", a);
+     
+        a=123456;
+        System.out.printf("%1.1\r\n", a);
+    }
+}

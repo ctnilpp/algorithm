@@ -1,0 +1,18 @@
+package p5709;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		int m = cin.nextInt();
+		int t = cin.nextInt();
+		int s = cin.nextInt();
+		int eat = (int)(s/t);
+		System.out.println(m-eat);
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package p5714;
+
+import java.text.*;
+
+import java.math.*;
+
+class Main{
+public static void main(String args[]){
+double x=23.5455;
+
+NumberFormat ddf1=NumberFormat.getNumberInstance() ;
+
+
+ddf1.setMaximumFractionDigits(2);
+
+String s= ddf1.format(x) ;
+
+System.out.print(s);
+}
+
+}
