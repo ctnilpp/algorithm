@@ -14,6 +14,6 @@ public class Main {
 			a = Math.floor(a/2);
 		}
 		System.out.println(day);
-	}
+	}	
 
 }

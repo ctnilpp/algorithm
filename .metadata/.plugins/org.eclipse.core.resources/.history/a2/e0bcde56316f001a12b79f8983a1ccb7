@@ -1,0 +1,21 @@
+package p3383;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		int cnt =0;
+		int prime[] = new int[100000005];
+		int n = cin.nextInt();
+		int q = cin.nextInt();
+		int qnum[] = new int[q];
+		for(int i=0;i<qnum.length;i++){
+			qnum[i] = cin.nextInt();
+		}
+		
+	}
+
+}

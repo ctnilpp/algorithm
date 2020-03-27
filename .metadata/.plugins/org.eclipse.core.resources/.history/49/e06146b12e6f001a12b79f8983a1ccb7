@@ -1,0 +1,31 @@
+package p5723;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		int isprime[] = new int[100005];
+		int sum=0;
+		int flag=0;//³¬ÖØºóÊä³ö
+		isprime[1]=1;
+		isprime[0]=1;
+		int L = cin.nextInt();
+		for(int i=2;i<=L;i++){
+			if(isprime[i]==0){
+				System.out.println(i);
+				sum++;
+				for(int j =i*i;j<=L;j+=i){
+					 isprime[j]=1;
+				}
+			}
+		}
+		System.out.println(sum);
+	}
+
+	
+	
+	
+}

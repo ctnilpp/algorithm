@@ -1,0 +1,22 @@
+package p1009;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		int sum =1;
+		int N = cin.nextInt();
+		for(int i=1;i<=N;i++){
+			int now = 1;
+			for(int j=i;j>=1;j--){
+				now *=j;
+			}
+			sum +=now;
+		}
+		System.out.println(sum);
+	}
+
+}
