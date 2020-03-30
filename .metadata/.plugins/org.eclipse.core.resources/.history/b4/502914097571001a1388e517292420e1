@@ -1,0 +1,17 @@
+package p1007;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		int L = cin.nextInt();
+		int N = cin.nextInt();
+		for(int i=0;i<N;i++){
+			
+		}
+	}
+
+}
