@@ -9,30 +9,20 @@ public class Main {
 		Scanner cin =  new Scanner(System.in);
 		n =cin.nextInt();
 		int x =0;
-		int k =1;
 		int sum=0;
-		for(x=100;x>=1;x--){
-			sum=0;
-			
-			if(sum==n){
-				System.out.println(x);
-				System.out.println(k);
-				break;
+		int flag =0;
+		for(int k=1;;k++){
+			for(x=100;x>=1;x--){//将无限变有限的想法也非常棒！
+				if(((7*x+21*k)*52)==n){//这里十分巧妙，以后我应该要多点从不变的东西上面下手
+					flag=1;//跳出循环
+					System.out.println(x);
+					System.out.println(k);
+					break;
+				}
 			}
+			if(flag==1)break;
+		}
 		}
 	}
 
-	private static void count(int x,int k) {
-		// TODO Auto-generated method stub
-		int day=1;
-		int when=1;
-		int sum=0;
-		while(sum<=n&&day<=52){
-			sum+=x+when*k;
-			day++;
-		}
-
-	}
 	
-
-}
