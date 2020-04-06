@@ -56,16 +56,15 @@ public class Main {
 			}
 		}
 		for(int q=1;q<n+1;q++){
-			System.out.print(" ");
 			for(int w=1;w<n+1;w++){
-					if(w<n){
-						if(sum[q][w]<10)System.out.print(" "+sum[q][w]+" ");
-						else System.out.print(sum[q][w]+" ");
-					}
-					else {
-						if(sum[q][w]<10)System.out.print(" "+sum[q][w]);
-						else System.out.print(sum[q][w]);
-					}
+				if(w<=n){
+					if(sum[q][w]<10)System.out.print(" "+sum[q][w]+" ");
+					else System.out.print(" "+sum[q][w]);
+				}
+				else {
+					if(sum[q][w]<10)System.out.print(" "+sum[q][w]);
+					System.out.print(sum[q][w]);
+				}
 			}
 			System.out.println();
 		}

@@ -11,18 +11,18 @@ public class Main {
 		int sum[][] = new int[11][11]; //用1~10
 		int dir = 0;//0→ , 1↓ ,2← ,3↑
 		int i =1;
-		int j =1;
+		int j =2;
 		sum[1][1] =1;
 		int max = n*n;
 		//边界是1和n 0和n+1都是越界
-		int start = 2;
+		int start = 1;
 		while(start<=max){
 			int flag =0;//flag==1就是有前进，否则没有的话要转向
+			start++;
 			if(dir==0){
 				if(sum[i][j+1]==0&&j+1<n+1){
 					flag=1;
 					sum[i][j+1]=start;
-					start++;
 					j++;
 				}
 			}
@@ -30,7 +30,6 @@ public class Main {
 				if(sum[i+1][j]==0&&i+1<n+1){
 					flag=1;
 					sum[i+1][j]=start;
-					start++;
 					i++;
 				}
 			}
@@ -38,7 +37,6 @@ public class Main {
 				if(sum[i][j-1]==0&&j-1>0){
 					flag=1;
 					sum[i][j-1]=start;
-					start++;
 					j--;
 				}
 			}
@@ -46,7 +44,6 @@ public class Main {
 				if(sum[i-1][j]==0&&i-1>0){
 					flag=1;
 					sum[i-1][j]=start;
-					start++;
 					i--;
 				}
 			}
@@ -56,16 +53,8 @@ public class Main {
 			}
 		}
 		for(int q=1;q<n+1;q++){
-			System.out.print(" ");
 			for(int w=1;w<n+1;w++){
-					if(w<n){
-						if(sum[q][w]<10)System.out.print(" "+sum[q][w]+" ");
-						else System.out.print(sum[q][w]+" ");
-					}
-					else {
-						if(sum[q][w]<10)System.out.print(" "+sum[q][w]);
-						else System.out.print(sum[q][w]);
-					}
+				System.out.print(sum[q][w]);
 			}
 			System.out.println();
 		}
