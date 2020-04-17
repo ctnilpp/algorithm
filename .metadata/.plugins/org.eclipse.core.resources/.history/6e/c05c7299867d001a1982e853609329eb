@@ -1,0 +1,29 @@
+package p1957;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		String now = cin.next();
+		char last = 0;
+		int use[] = new int[2];
+		int n = cin.nextInt();
+		for(int i=0;i<n;i++){
+			now = cin.next();
+			if(now.charAt(0)<=122&&now.charAt(0)>=97){
+				last = now.charAt(0);
+				use[0] = cin.nextInt();
+				use[1] = cin.nextInt();
+			}
+			else {
+				use[0] = (int)now.charAt(0);
+				use[1] = cin.nextInt();
+			}
+			System.out.println(last+" "+use[0]+" "+use[1]);
+		}
+	}
+
+}

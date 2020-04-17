@@ -1,0 +1,60 @@
+package p5734;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		int n = cin.nextInt();
+		String old = cin.next();
+		for(int i=0;i<n;i++){
+			String now = cin.next();
+			int operation = (int)now.charAt(0)-48;
+			System.out.println(operation);
+			StringBuffer tnow = new StringBuffer(old);
+			System.out.println("tnow:"+tnow.toString());
+			switch(operation){
+			case 1:
+				String addstr = cin.next();
+				old+=addstr;
+				System.out.println(old);
+				break;
+			case 2:
+				int head = cin.nextInt();
+				int tail = cin.nextInt();
+				old = tnow.substring(head,head+tail);
+				System.out.println(old);
+				break;
+			case 3:
+				int insert = cin.nextInt();
+				String insertstr = cin.next();
+				String pre = tnow.substring(0,insert);
+				String next = tnow.substring(insert,tnow.length());
+				old = pre+insertstr+next;
+				System.out.println(old);
+				break;
+			case 4:
+				String findstr = cin.next();
+				int flag = 0;
+				int len = 0;
+				for(int j=0;j<old.length();j++){
+					if(flag==1)break;
+					for(int q=0,w=j;q<findstr.length();q++,w++){
+						if(old.charAt(w)==findstr.charAt(q)){
+							len++;
+						}
+					}
+					if(len==findstr.length()){
+						flag=1;
+					}
+				}
+				break;
+			default:
+			}
+		}
+		
+	}
+
+}

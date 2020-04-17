@@ -1,0 +1,23 @@
+package p5015;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		System.out.println((int)'a'+" "+(int)'z'+" "+(int)'0'+" "+(int)'9'+" "+(int)'A'+" "+(int)'Z'+" ");
+		String now = cin.nextLine();
+		int delete = 0;
+		for(int i=0;i<now.length();i++){
+			if((now.charAt(i)>=97&&now.charAt(i)<=122)||(now.charAt(i)>=48&&now.charAt(i)<=57)||(now.charAt(i)>=65&&now.charAt(i)<=90)){
+				System.out.println();
+				delete++;
+			}
+		}
+		System.out.println(now.length());
+		System.out.println(now.length()-delete);
+	}
+
+}

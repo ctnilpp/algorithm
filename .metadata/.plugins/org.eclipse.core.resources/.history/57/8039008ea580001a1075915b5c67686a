@@ -1,0 +1,36 @@
+package p5734;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner cin = new Scanner(System.in);
+		int n = cin.nextInt();
+		String old = cin.next();
+		for(int i=0;i<n;i++){
+			String now = cin.nextLine();
+			int operation = (int)now.charAt(0);
+			StringBuffer tnow = new StringBuffer(old);
+			System.out.println(tnow.toString());
+			switch(operation){
+			case 1:
+				for(int j=2;j<now.length();j++){
+//					tnow.append(now.charAt(j));
+				}
+				System.out.println(tnow.toString());
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			default:
+			}
+		}
+		
+	}
+
+}
